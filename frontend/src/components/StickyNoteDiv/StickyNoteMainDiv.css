@@ -1,0 +1,59 @@
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+header nav .search input {
+  border: none;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 8px;
+  border: 1px solid skyblue;
+}
+.stickyNoteBigContainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.draggableContainer {
+  display: inline-block;
+  width: 200px;
+  height: 320px;
+  background-color: transparent;
+}
+.stickyNoteContainer {
+  width: auto;
+  height: auto;
+  display: inline-block;
+}
+.stickyNoteHandle {
+  background-color: #eee;
+  display: inline-flex;
+  height: 20px;
+  width: 20px;
+  justify-content: center;
+  align-items: center;
+  cursor: move;
+}
+.emptyData {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.logoutbtn {
+  right: 10%;
+  background-color: skyblue;
+  font-weight: 600;
+  color: #333;
+}
+@media screen and (max-width: 760px) {
+  .stickyNoteBigContainer {
+    justify-content: center;
+  }
+  header nav {
+    justify-content: space-around;
+  }
+}

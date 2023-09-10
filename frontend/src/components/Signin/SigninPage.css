@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Handlee");
+.signinPage {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #333;
+}
+.signinPageContent {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.signinPageLeft {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signinPageLeft .signinPageLeftContent {
+  width: 70%;
+  height: 50%;
+  padding: 5px;
+}
+.signinPageLeft .signinPageLeftContent h2 {
+  color: #fff;
+  font-size: 3rem;
+}
+.signinPageLeft .signinPageLeftContent h2 span {
+  color: #fff;
+  font-size: 5rem;
+}
+.signinPageRight {
+  width: 100%;
+  height: 100%;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forBg {
+  width: 10%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 2px 2px 5px #eee, inset 20px 20px 65px #eee,
+    inset -2px -2px 15px #eee, inset -20px -20px 65px #eee, 2px 2px 20px #eee,
+    -2px -2px 20px #eee, 30px 30px 100px #eee, -30px -30px 100px #eee,
+    70px 70px 120px #eee, -70px -70px 120px #eee, 100px 100px 500px #eee,
+    -100px -100px 500px #eee;
+  border-radius: 100%;
+}
+@keyframes rot {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+.form {
+  width: 250px;
+  height: auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Handlee", cursive;
+  position: relative;
+  clip-path: polygon(80% 0, 100% 20%, 100% 100%, 0 100%, 0 0);
+  padding: 10px;
+  cursor: move;
+}
+.form::before {
+  content: "";
+  width: 50px;
+  height: 59px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: -1%;
+
+  -webkit-box-shadow: 0px 0px 15px 4px #0c0f4180;
+  -moz-box-shadow: 0px 0px 15px 4px #0c0f4180;
+  box-shadow: 0px 0px 15px 4px #0c0f4180;
+}
+@media screen and (max-width: 770px) {
+  .signinPageContent {
+    flex-direction: column;
+  }
+  .signinPageLeft .signinPageLeftContent h2 {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .signinPageLeft .signinPageLeftContent h2 span {
+    color: #fff;
+    font-size: 3rem;
+  }
+}
